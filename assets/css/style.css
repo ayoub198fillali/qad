@@ -332,7 +332,24 @@ header .navbar ul li a:hover {
 /* social icons end */
 
 /* hero media queries starts*/
+@media (max-height: 900px) {
+  .home {
+    min-height: 110vh !important;
+    /* background: blue !important; */
+  }
+}
+@media (max-height: 750px) {
+  .home {
+    min-height: 150vh !important;
+    /* background: red !important; */
+  }
+}
+
 @media (max-width: 450px) {
+  .home {
+    min-height: 150vh;
+  }
+
   .home .btn {
     margin: 4rem 0;
   }
