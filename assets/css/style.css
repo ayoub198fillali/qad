@@ -93,7 +93,7 @@ section {
   font-weight: 800;
   text-align: center;
   position: relative;
-  margin: 36px auto 44px auto;
+  margin: 35px auto 20px auto;
 }
 .heading::before {
   content: "";
@@ -397,26 +397,29 @@ header .navbar ul li a:hover {
   flex-wrap: wrap;
   padding: 4rem;
 }
-.about .row .image {
+.about .image {
   text-align: center;
   flex: 1 1 35rem;
 }
-.about .row .image img {
-  margin: 4rem;
+.about .image img {
+  /* margin: 4rem; */
   width: 30rem;
   height: auto;
   border-radius: 5%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
   mix-blend-mode: luminosity;
   transition: 0.3s;
   cursor: pointer;
+  float: right;
+  padding: 20px;
+  z-index: 10;
 }
-.about .row .image img:hover {
+.about .image img:hover {
   mix-blend-mode: normal;
 }
 .about .row .content {
   flex: 1 1 45rem;
   padding: 3rem;
+  padding-top: 0;
 }
 .about .row .content h3 {
   color: var(--mainBlueColor);
@@ -483,13 +486,14 @@ header .navbar ul li a:hover {
 }
 /* about media queries starts*/
 @media screen and (max-width: 600px) {
-  .about .row .image {
+  .about .image {
     margin-top: 2rem;
   }
-  .about .row .image img {
+  .about .image img {
     margin: 0 auto;
     width: 80%;
     mix-blend-mode: normal;
+    float: none;
   }
   .about .row {
     padding: 0.5rem;
