@@ -38,10 +38,6 @@ img {
   -webkit-user-drag: none;
 }
 
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-}
 html::-webkit-scrollbar {
   width: 0.8rem;
 }
@@ -90,8 +86,6 @@ section {
   min-height: 58vh;
   padding: 2rem 9%;
 }
-.pointTitle {
-}
 
 .heading {
   font-size: 3.5rem;
@@ -138,9 +132,7 @@ header .logo i {
   font-size: 1.75rem;
   margin-right: 8px;
 }
-header .logo:hover {
-  color: #fc8c05;
-}
+
 header .navbar ul {
   list-style: none;
   display: flex;
@@ -170,7 +162,6 @@ header .navbar ul li a:hover {
 #menu {
   font-size: 3rem;
   cursor: pointer;
-  color: rgb(24, 2, 63);
   display: none;
   margin-right: -15px;
 }
@@ -218,13 +209,6 @@ header .navbar ul li a:hover {
   }
   header .navbar.nav-toggle {
     right: 0;
-  }
-
-  .skills .container .row {
-    grid-template-columns: repeat(3, 1fr) !important;
-    margin: 1rem;
-    padding: 2rem 0.2rem 2rem 0.2rem;
-    gap: 1rem;
   }
 }
 /* hamburger icon ends */
