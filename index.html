@@ -14,6 +14,13 @@
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -26,10 +33,10 @@
     <link
       id="favicon"
       rel="shortcut icon"
-      href="./assets/images/favicon.png"
+      href="./assets/images/favicon.svg"
       type="image/x-png"
     />
-    <title>Portfolio | Qad</title>
+    <title>Qad</title>
   </head>
   <body>
     <!-- oncontextmenu="return false" -->
@@ -41,15 +48,22 @@
 
     <!-- navbar starts -->
     <header>
-      <a href="/qad" class="logo"><i class="fa fa-code"></i> QAD</a>
-      <!-- <a href="/porayfil" class="logo"
-        ><img src="./assets/images/favicon.png" width="90" alt="" srcset="" />
-      </a> -->
+      <!-- <a href="/qad" class="logo"><i class="fa fa-code"></i> QAD</a> -->
+      <a href="/qad" class="logo"
+        ><img
+          draggable="false"
+          src="./assets/images/logo.svg"
+          width="120"
+          alt=""
+          srcset=""
+        />
+      </a>
 
       <div id="menu" class="fas fa-bars"></div>
       <nav class="navbar">
         <ul>
           <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#service">Services</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -115,23 +129,72 @@
         <img
           draggable="false"
           class="tilt"
-          src="./assets/images/hero.png"
+          src="./assets/images/hero.svg"
           alt=""
         />
       </div>
     </section>
     <!-- hero section ends -->
 
+    <!-- Services -->
+    <section class="service" id="service">
+      <h2 class="heading">
+        <!-- <i class="fas fa-user-alt"></i>  -->
+        Our <span>Services</span>
+      </h2>
+
+      <div class="container">
+        <div class="box ser1">
+          <div class="img-holder">
+            <img src="./assets/images/Ser1.svg" alt="" />
+          </div>
+          <h2>Web Site</h2>
+          <p>
+            QAD.digit offers you a service to create your Ecommerce site,
+            Application..., and all types of websites.
+          </p>
+          <a href="/qad/digit">Order</a>
+        </div>
+        <div class="box ser2">
+          <div class="img-holder">
+            <img src="./assets/images/Ser2.svg" alt="" />
+          </div>
+          <h2>Graphic Design</h2>
+          <p>
+            QAD.rb offers you a service to create your Logo, Business Card,
+            Flyers and all other visuals For your Brand/Company.
+          </p>
+
+          <a href="/qad/design">Order</a>
+        </div>
+        <div class="box ser3">
+          <div class="img-holder">
+            <img src="./assets/images/Ser3.svg" alt="" />
+          </div>
+          <h2>Material</h2>
+          <p>
+            QAD.digit offers you a service for purchasing electronic equipment
+            for your project and projects already carried out for you.
+          </p>
+
+          <a href="https://ayoub198fillali.github.io/MaterialStore/">Order</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+
     <!-- about section starts -->
     <section class="about" id="about">
       <h2 class="heading">
-        <i class="fas fa-user-alt"></i> About <span>Us</span>
+        <!-- <i class="fas fa-user-alt"></i>  -->
+        About <span>Us</span>
       </h2>
 
       <div class="row">
         <div class="content">
-          <h3>We are QAD</h3>
-          <span class="tag">IT & Digital Company</span>
+          <h3>We are <span>QAD</span></h3>
+          <span class="tag">art of innovation</span>
 
           <p style="text-align: justify">
             We specialize in everything that achieves real growth for your
@@ -146,7 +209,7 @@
             progress of the project. We always strive for your success, with
             Digital Media, be sure that you have chosen the best
           </p>
-
+          <!-- 
           <div class="box-container">
             <div class="box">
               <p><span> Service : </span> 24h/24h</p>
@@ -166,7 +229,7 @@
               </p>
               <p><span> place : </span> LA GARDE, FRANCE - 83130</p>
             </div>
-          </div>
+          </div> -->
 
           <div class="resumebtn">
             <a href="#contact" target="_blank" class="btn"
@@ -396,7 +459,7 @@
       <div class="container">
         <div class="content">
           <div class="image-box">
-            <img draggable="false" src="./assets/images/contact1.png" alt="" />
+            <img draggable="false" src="./assets/images/contact.svg" alt="" />
           </div>
           <form id="contact-form">
             <div class="form-group">
@@ -438,7 +501,9 @@
         <div class="box">
           <h3>QAD</h3>
           <p>
-            Thank you for visiting Our website. Connect with us over socials.
+            Thank you for visiting our website and trusting our service, we will
+            do our best to satisfy you. Connect with us on social media for more
+            information.
             <br />
           </p>
         </div>
@@ -446,13 +511,16 @@
         <div class="box">
           <h3>quick links</h3>
           <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#service"
+            ><i class="fas fa-chevron-circle-right"></i> services</a
+          >
           <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
         </div>
 
         <div class="box">
           <h3>contact info</h3>
           <p><i class="fas fa-phone"></i>+33698610106</p>
-          <p><i class="fas fa-envelope"></i>filalifilali1999@gmail.com</p>
+          <p><i class="fas fa-envelope"></i>qad.digital@gmail.com</p>
           <p><i class="fas fa-map-marked-alt"></i>LA GARDE, FRANCE-83130</p>
           <div class="share">
             <!-- <a
@@ -489,7 +557,7 @@
       </div>
 
       <h1 class="credit">
-        Designed with <i class="fa fa-crown pulse"></i> by
+        Created <i class="fa fa-pen pulse"></i> by
         <a
           href="https://www.linkedin.com/in/ayoub-fillali-349b8a171/"
           target="_blank"

@@ -87,11 +87,11 @@ $(document).ready(function () {
 
 document.addEventListener("visibilitychange", function () {
   if (document.visibilityState === "visible") {
-    document.title = "Portfolio | Ayoub FILLALI";
-    $("#favicon").attr("href", "assets/images/favicon.png");
+    document.title = "Qad";
+    $("#favicon").attr("href", "assets/images/favicon.svg");
   } else {
-    document.title = "Come Back To Portfolio";
-    $("#favicon").attr("href", "assets/images/favhand.png");
+    document.title = "Come Back To Qad WebSite";
+    $("#favicon").attr("href", "assets/images/favhand.svg");
   }
 });
 
@@ -102,9 +102,10 @@ var typed = new Typed(".typing-text", {
     "Digital and graphic design",
     "E-marketing",
     "Brand building and design",
-    "content creation",
+    "Printing (T-shirt, BC, Cap...)",
     "Developing software solutions",
     "E-Commerce Stores",
+    "sell electronic material",
   ],
   loop: true,
   typeSpeed: 50,
