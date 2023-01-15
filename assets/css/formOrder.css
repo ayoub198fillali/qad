@@ -1,0 +1,89 @@
+.choiceContainer {
+  /* border: solid 2px red; */
+  height: 150px;
+  display: flex;
+  /* gap: 123px; */
+  align-content: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.DesignChoice {
+  width: 130px;
+  height: 130px;
+  margin: 10px;
+  overflow: hidden;
+  background-color: var(--mainGrayColor);
+  opacity: 0.4 !important;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.DesignChoice::before {
+  content: attr(data-name);
+  position: absolute;
+  color: inherit;
+  background-color: white;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  bottom: 10px;
+}
+
+.DesignChoice:hover {
+  background-color: var(--mainCyanColor);
+  opacity: 1 !important;
+}
+.DesignChoice i {
+  font-size: 55px;
+  color: white;
+  text-align: center;
+  transform: translateY(-10px);
+}
+
+.DesignChoice.checked {
+  position: relative;
+  background-color: var(--mainBlueColor);
+  opacity: 1 !important;
+}
+
+.textTitleForm {
+  /* font-family: "Dancing Script"; */
+  padding-top: 20px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.contact .formOrder {
+  width: 100%;
+  margin-right: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.fg2 {
+  width: 50% !important;
+  align-items: center;
+}
+.formOrder button {
+  margin-bottom: 15px;
+}
+
+.fg2 .field,
+.fg2 .message {
+  width: 80%;
+}
+
+@media (max-width: 450px) {
+  .fg2 {
+    width: 100% !important;
+  }
+}

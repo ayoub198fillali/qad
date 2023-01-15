@@ -52,7 +52,7 @@ $(document).ready(function () {
   });
 
   // smooth scrolling
-  $('a[href*="#"]').on("click", function (e) {
+  $('a[href*="#"]:not([href*="/"])').on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
       {
@@ -65,21 +65,26 @@ $(document).ready(function () {
 
   // <!-- emailjs to mail contact form data -->
   $("#contact-form").submit(function (event) {
-    emailjs.init("0_F9rR6oBtBbaBTkv");
+    emailjs.init("osB0muvAZQW21XMQq");
+    // let template = "";
+    // if ($(".textTitleForm").html() == "Logo") template = "logo";
+    // else if ($(".textTitleForm").html() == "business card") template = "bc";
+    // else if ($(".textTitleForm").html() == "Other") template = "o";
+    // else template = "";
 
-    emailjs
-      .sendForm("service_1f6c6js", "template_d80tgjb", "#contact-form")
-      .then(
-        function (response) {
-          console.log("SUCCESS!", response.status, response.text);
-          document.getElementById("contact-form").reset();
-          myNotif("success", "Form Submitted Successfully", 1000);
-        },
-        function (error) {
-          console.log("FAILED...", error);
-          myNotif("error", "Form Submission Failed! Try Again", 1000);
-        }
-      );
+    let template = "template_design";
+
+    emailjs.sendForm("service_afdqcx3", template, "#contact-form").then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+        document.getElementById("contact-form").reset();
+        myNotif("success", "Form Submitted Successfully", 1000);
+      },
+      function (error) {
+        console.log("FAILED...", error);
+        myNotif("error", "Form Submission Failed! Try Again", 1000);
+      }
+    );
     event.preventDefault();
   });
   // <!-- emailjs to mail contact form data -->
@@ -97,16 +102,7 @@ document.addEventListener("visibilitychange", function () {
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-  strings: [
-    "Development Of Websites",
-    "Digital and graphic design",
-    "E-marketing",
-    "Brand building and design",
-    "Printing (T-shirt, BC, Cap...)",
-    "Developing software solutions",
-    "E-Commerce Stores",
-    "sell electronic material",
-  ],
+  strings: GlobalStringHideShow,
   loop: true,
   typeSpeed: 50,
   backSpeed: 25,
@@ -254,20 +250,11 @@ srtop.reveal(".about .content p", { delay: 200 });
 srtop.reveal(".about .content .box-container", { delay: 200 });
 srtop.reveal(".about .content .resumebtn", { delay: 200 });
 
-/* SCROLL SKILLS */
-srtop.reveal(".skills .container", { interval: 200 });
-srtop.reveal(".skills .container .bar", { delay: 400 });
-
-/* SCROLL EDUCATION */
-srtop.reveal(".education .box", { interval: 200 });
-
-/* SCROLL PROJECTS */
-srtop.reveal(".work .box", { interval: 200 });
-
 /* SCROLL EXPERIENCE */
 srtop.reveal(".experience .timeline", { delay: 400 });
 srtop.reveal(".experience .timeline .container", { interval: 400 });
 
 /* SCROLL CONTACT */
+srtop.reveal(".contact .DesignChoice", { delay: 400 });
 srtop.reveal(".contact .container", { delay: 400 });
 srtop.reveal(".contact .container .form-group", { delay: 400 });
