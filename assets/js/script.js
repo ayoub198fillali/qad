@@ -263,22 +263,19 @@ srtop.reveal(".contact .container .form-group", { delay: 500 });
 
 // Portfolio
 const images = [
-  "../../assets/images/PortfolioDesign/1.png",
-  "../../assets/images/PortfolioDesign/2.png",
-  "../../assets/images/PortfolioDesign/3.png",
-  "../../assets/images/PortfolioDesign/4.png",
-  "../../assets/images/PortfolioDesign/5.png",
-  "../../assets/images/PortfolioDesign/6.png",
-  "../../assets/images/PortfolioDesign/7.png",
-  "../../assets/images/PortfolioDesign/8.png",
-  "../../assets/images/PortfolioDesign/9.png",
-  "../../assets/images/PortfolioDesign/10.png",
-  "../../assets/images/PortfolioDesign/11.png",
-  "../../assets/images/PortfolioDesign/12.png",
-  "../../assets/images/PortfolioDesign/13.png",
-  // "../../assets/images/PortfolioDesign/(9).png",
-  // "../../assets/images/PortfolioDesign/(10).png",
-  // "../../assets/images/PortfolioDesign/(111).png",
+  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/1.png?raw=true",
+  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/2.png?raw=true",
+  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/3.png?raw=true",
+  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/4.png?raw=true",
+  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/5.png?raw=true",
+  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/6.png?raw=true",
+  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/7.png?raw=true",
+  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/8.png?raw=true",
+  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/9.png?raw=true",
+  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/10.png?raw=true",
+  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/11.png?raw=true",
+  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/12.png?raw=true",
+  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/13.png?raw=true",
 ];
 let currentIndex = 0;
 
