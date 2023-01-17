@@ -612,5 +612,12 @@
       ];
     </script>
     <script src="./assets/js/script.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("img").on("contextmenu", function (e) {
+          e.preventDefault();
+        });
+      });
+    </script>
   </body>
 </html>
