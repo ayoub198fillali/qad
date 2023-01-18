@@ -88,6 +88,24 @@ $(document).ready(function () {
     event.preventDefault();
   });
   // <!-- emailjs to mail contact form data -->
+
+  $("#contact-form2").submit(function (event) {
+    emailjs.init("osB0muvAZQW21XMQq");
+    let template = "template_design";
+
+    emailjs.sendForm("service_afdqcx3", template, "#contact-form2").then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+        document.getElementById("contact-form2").reset();
+        myNotif("success", "Form Submitted Successfully", 1000);
+      },
+      function (error) {
+        console.log("FAILED...", error);
+        myNotif("error", "Form Submission Failed! Try Again", 1000);
+      }
+    );
+    event.preventDefault();
+  });
 });
 
 document.addEventListener("visibilitychange", function () {

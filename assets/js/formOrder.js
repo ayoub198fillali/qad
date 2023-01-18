@@ -7,7 +7,7 @@ $(".DesignChoice")
     switch (this.id) {
       case "DesignChoice1":
         $(".textTitleForm").html("Logo");
-        $(".formOrder").html(`
+        $("#contact-form").html(`
             <input
             style="display: none"
             type="text"
@@ -61,7 +61,7 @@ $(".DesignChoice")
         break;
       case "DesignChoice2":
         $(".textTitleForm").html("business card");
-        $(".formOrder").html(`
+        $("#contact-form").html(`
             <input
             style="display: none"
             type="text"
@@ -128,7 +128,7 @@ $(".DesignChoice")
 
       case "DesignChoice3":
         $(".textTitleForm").html("Other");
-        $(".formOrder").html(`
+        $("#contact-form").html(`
             <input
             style="display: none"
             type="text"
