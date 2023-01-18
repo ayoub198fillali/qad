@@ -260,78 +260,11 @@ srtop.reveal(".experience .timeline .container", { interval: 400 });
 srtop.reveal(".contact .container .form-group", { delay: 500 });
 
 // ------------------------------------------------- //
-
-// Portfolio
-const images = [
-  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/1.png?raw=true",
-  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/2.png?raw=true",
-  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/3.png?raw=true",
-  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/4.png?raw=true",
-  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/5.png?raw=true",
-  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/6.png?raw=true",
-  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/7.png?raw=true",
-  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/8.png?raw=true",
-  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/9.png?raw=true",
-  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/10.png?raw=true",
-  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/11.png?raw=true",
-  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/12.png?raw=true",
-  "https://github.com/ayoub198fillali/qad/blob/main/assets/images/PortfolioDesign/13.png?raw=true",
-];
-let currentIndex = 0;
-
-// ------------------------------------------------- //
-
-let Code = "";
-images.forEach(function (element, idx) {
-  console.log(element);
-  Code += `  <div class="mySlides">
-              <div class="numbertext">${idx + 1} / ${images.length}</div>
-              <img src="${element}">
-            </div>`;
-});
-
-Code += `  
-      <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <!-- Image text -->
-        <div class="caption-container">
-          <p id="caption">Our Portfolio</p>
-        </div>
-        <div class="row">
-        `;
-
-images.forEach(function (element, idx) {
-  console.log(element);
-  Code += `  
-          <div class="column">
-            <img class="demo cursor" src="${element}" style="width:100%" onclick="currentSlide(${
-    idx + 1
-  })" alt="${element.split(".")[0]}">
-          </div>
-        `;
-});
-Code += ` </div>`;
-$(".containerPort").html(`${Code}`);
-
-// JS
 let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("demo");
-  // let captionText = $("#caption");
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -347,3 +280,58 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+const url =
+  "https://api.github.com/repos/ayoub198fillali/qad/contents/assets/images/PortfolioDesign";
+let dataNumber;
+fetch(url)
+  .then((response) => response.json())
+  .then((images) => {
+    // ------------------------------------------------- //
+    let Code = "";
+    images.forEach(function (element, idx) {
+      Code += `   <div class="mySlides">
+                    <div class="numbertext">${idx + 1} / ${images.length}</div>
+                    <img src="${element.download_url}">
+                  </div>`;
+    });
+
+    Code += `  
+          <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption">Our Portfolio</p>
+            </div>
+            <div class="row">
+            `;
+
+    images.forEach(function (element, idx) {
+      Code += `  
+              <div class="column">
+                <img class="demo cursor" src="${
+                  element.download_url
+                }" style="width:100%" onclick="currentSlide(${idx + 1})" alt="${
+        element.download_url.split(".")[0]
+      }">
+              </div>
+            `;
+    });
+    Code += ` </div>`;
+    $(".containerPort").html(`${Code}`);
+  })
+  .then(() => {
+    // JS
+    showSlides(slideIndex);
+  })
+  .catch((error) => console.error(error));
+//
