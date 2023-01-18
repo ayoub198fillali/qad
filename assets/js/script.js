@@ -269,13 +269,18 @@ srtop.reveal(".about .content .box-container", { delay: 200 });
 srtop.reveal(".about .content .resumebtn", { delay: 200 });
 
 /* SCROLL EXPERIENCE */
-srtop.reveal(".experience .timeline", { delay: 400 });
-srtop.reveal(".experience .timeline .container", { interval: 400 });
+// srtop.reveal(".experience .timeline", { delay: 400 });
+// srtop.reveal(".experience .timeline .container", { interval: 400 });
 
 /* SCROLL CONTACT */
 // srtop.reveal(".contact .DesignChoice", { delay: 300 });
 // srtop.reveal(".contact .container", { delay: 300 });
-srtop.reveal(".contact .container .form-group", { delay: 500 });
+
+// srtop.reveal("#contact .textTitleForm", { delay: 300 });
+// srtop.reveal("#contact #contact-form", { delay: 300 });
+// srtop.reveal("#contact button", { delay: 300 });
+
+// srtop.reveal("#workus ", { delay: 300 });
 
 // ------------------------------------------------- //
 let slideIndex = 1;
