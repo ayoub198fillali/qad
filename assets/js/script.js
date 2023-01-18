@@ -338,9 +338,9 @@ fetch(url)
               <div class="column">
                 <img class="demo cursor" src="${
                   element.download_url
-                }" style="width:100%" onclick="currentSlide(${idx + 1})" alt="${
-        element.download_url.split(".")[0]
-      }">
+                }" style="width:100%" onclick="currentSlide(${
+        idx + 1
+      })" alt="${0}">
               </div>
             `;
     });
