@@ -86,4 +86,7 @@
   .fg2 {
     width: 100% !important;
   }
+  .DesignChoice::before {
+    font-size: 12px !important;
+  }
 }
