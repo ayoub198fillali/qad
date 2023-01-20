@@ -1,0 +1,22 @@
+[
+  {
+    "num": "1",
+    "Name": "Kit Pro For Arduino",
+    "Description": "Kit Pro pour Arduino, Le kit de démarrage Arduino est un kit complet de composants nécessaires pour bien apprendre l’Arduino et le langage C. Il comprend tout ce dont vous avez besoin pour réaliser vos propres projets électroniques: un Arduino Uno, breadboard, des fils de connexion, des capteurs, Afficheur LCD, des LED, des résistances, un potentiomètre et des boutons poussoirs et autres composants.",
+    "price": "420 DH"
+  },
+
+  {
+    "num": "2",
+    "Name": "ESP32 WiFi + Bluetooth Dual Core",
+    "Description": "ESP32 est un MCU 32Bit dual core 240Mhz offrant une tres grande puissance de calcul et une connectivité Wifi et Bluetooth. Cette carte est 100% compatible avec IDE Arduino",
+    "price": "90 DH"
+  },
+
+  {
+    "num": "3",
+    "Name": "Kit Starter For Arduino uno",
+    "Description": "Kit Arduino uno(1 – Carte Arduino uno 1 – Câble USB 1 – Carte d’essai 400 points 65- Câble de raccordement mal/mal 1 – Connecteur de la batterie 9V)",
+    "price": "120 DH"
+  }
+]

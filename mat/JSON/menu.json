@@ -1,0 +1,118 @@
+[
+  {
+    "Name": "SSD 512GB",
+    "Rate": 5,
+    "Description": "DiskDur SSD SATA, Transmission à grande vitesse, Anti-choc et anti-chute",
+    "Prix": "320.00",
+    "img": "SSD512GB"
+  },
+  {
+    "Name": "SSD 256GB",
+    "Rate": 5,
+    "Description": "DiskDur SSD SATA, Transmission à grande vitesse, Anti-choc et anti-chute",
+    "Prix": "210.00",
+    "img": "SSD256GB"
+  },
+  {
+    "Name": "ESP32 WiFi + Bluetooth Dual Core",
+    "Rate": 5,
+    "Description": "ESP32 est un MCU 32Bit dual core 240Mhz offrant une tres grande puissance de calcul et une connectivité Wifi et Bluetooth. Cette carte est 100% compatible avec IDE Arduino",
+    "Prix": "90.00",
+    "img": "ESP32S"
+  },
+
+  {
+    "Name": "BH1750 Capteur de lumière pour Arduino",
+    "Rate": 5,
+    "Description": "BH1750 permettant de mesurer avec précision la luminosité ambiante. Ce module est prévu pour une utilisation avec un microcontrôleur type Arduino, Raspberry Pi ou compatible via le bus I2C.",
+    "Prix": "30.00",
+    "img": "BH1750Capteur"
+  },
+
+  {
+    "Name": "OV7670 Camera Module",
+    "Rate": 5,
+    "Description": "OV7670 image sensor, small size, low operating voltage, and provides all the features of the single-chip VGA camera and image processor.",
+    "Prix": "55.00",
+    "img": "OV7670Camera"
+  },
+
+  {
+    "Name": "Microphone Sensor",
+    "Rate": 5,
+    "Description": "Microphone Sensor High Sensitivity Sound Detecte Voice switch Module For Arduino",
+    "Prix": "29.00",
+    "img": "MicrophoneSensor"
+  },
+
+  {
+    "Name": "MAX3232",
+    "Rate": 4.5,
+    "Description": "MAX3232 RS232 To TTL Serial Port Converter Module DB9 Connector TX RX VCC GND Interface for Arduino/XBOX360/GPS/Car Testing",
+    "Prix": "38.00",
+    "img": "MAX3232"
+  },
+
+  {
+    "Name": "SYB-170 Mini",
+    "Rate": 5,
+    "Description": "SYB-170 Mini Solderless Prototype Breadboard 170 Tie-Points For Arduino Diy Kit",
+    "Prix": "15.00",
+    "img": "SYB170Mini"
+  },
+
+  {
+    "Name": "Multifunctional RFID-RC522 IC",
+    "Rate": 4.5,
+    "Description": "Multifunctional RFID-RC522 IC Card Sensor Module Set with Blank Card for Key Ring for Arduinos Raspberry-Pi W3JD",
+    "Prix": "25.00",
+    "img": "MultifunctionalRFID"
+  },
+
+  {
+    "Name": "1 Channel 5V Relay Module",
+    "Rate": 4.5,
+    "Description": "1 Channel 5V Relay Module with Optocoupler Isolation Support High And Low Level Trigger Development Board for Arduino",
+    "Prix": "35.00",
+    "img": "1Channel5VRelayModule"
+  },
+
+  {
+    "Name": "DC-DC Step Down Module",
+    "Rate": 4.5,
+    "Description": "DC-DC Step Down Module 6-24V 12V/24V to 5V 3A USB Charger Module Fr Arduino",
+    "Prix": "30.00",
+    "img": "DCStepDown"
+  },
+
+  {
+    "Name": "Hot Sale Durable 3-24V",
+    "Rate": 5,
+    "Description": "Hot Sale Durable 3-24V Piezo Electronic Buzzer Alarm 95DB Continuous Sound Beeper For Arduino Car Van New Arrival",
+    "Prix": "25.00",
+    "img": "HotSaleDurable"
+  },
+
+  {
+    "Name": "Raspberry Pi Pico (Without WIFI)",
+    "Rate": 5,
+    "Description": "Est une carte de microcontrôleur à faible coût et haute performance avec des interfaces numériques flexibles. Il intègre le propre Raspberry PiRP2040 microcontrôleur puce, Avec processeur Arm Cortex M0 + dual-core fonctionnant jusqu'à 133 MHz...",
+    "Prix": "110.00",
+    "img": "RaspberryPiPico"
+  },
+  {
+    "Name": "Raspberry Pi Pico W",
+    "Rate": 5,
+    "Description": "Est une carte de microcontrôleur à faible coût et haute performance avec des interfaces numériques flexibles. Il intègre le propre Raspberry PiRP2040 microcontrôleur puce, Avec processeur Arm Cortex M0 + dual-core fonctionnant jusqu'à 133 MHz...",
+    "Prix": "179.00",
+    "img": "RaspberryPiPicoW"
+  },
+
+  {
+    "Name": "LCD 1602, écran 16x 2",
+    "Rate": 5,
+    "Description": "c'est connectable à Arduino ou à toute autre carte microcontrôlée. Grâce à son interface pour bus I2C (TWI), il n’utilise que deux broches sur la carte Arduino.",
+    "Prix": "45.00",
+    "img": "LCD1602"
+  }
+]

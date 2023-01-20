@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Truck Food France" />
+    <meta
+      name="description"
+      content="Nous vous proposons une cuisine antillaise
+    FAIT DE MAISON dans un cadre agréable et chaleureux, à deux pas de la gare de maison alfort Alfortville.
+    Vous êtes tous les bienvenus !
+    Le restaurant est également à votre disposition pour tous types d'évènements ( anniversaires, repas d'affaires...). N'hésitez pas
+    à nous envoyer une demande si vous souhaitez le privatiser !"
+    />
+    <meta
+      name="keywords"
+      content="hleyresto, https://hleyresto.store/, hleyresto.store, H-LEY RESTO France, PLATS POPULAIRES, resto paris, resto maison, resto, hley resto, hley restau, hley, hley resto Paris, cuisine antillaise France, cuisine antillaise Paris, Manger en France, Manger en paris, Truck Food, H-LEY RESTO, anniversaires, cuisine antillaise, repas d'affaires"
+    />
+    <meta
+      content="hleyresto, https://hleyresto.store/, hleyresto.store, H-LEY RESTO France, PLATS POPULAIRES, resto paris, resto maison, resto, hley resto, hley restau, hley, hley resto Paris, cuisine antillaise France, cuisine antillaise Paris, Manger en France, Manger en paris, Truck Food, H-LEY RESTO, anniversaires, cuisine antillaise, repas d'affaires"
+    />
+
+    <meta name="author" content="HARDWARE-STORE." />
+    <title>QadMat STORE</title>
+    <link rel="icon" type="image/png" href="/images/L1.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/multi-select-tag.css" />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts      -->
+    <header>
+      <a href="#" class="logo"><i class="fas fa-microchip"></i>QMat-STORE.</a>
+      <nav class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#popular">Popular</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <!-- <a href="#review">review</a> -->
+        <a href="#order">Order</a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart" id="favorite-pack"></a>
+        <!-- fas fa-shopping-cart -->
+      </div>
+    </header>
+    <!-- header section ends-->
+
+    <!-- search form  -->
+    <form action="" id="search-form">
+      <input
+        type="search"
+        placeholder="Chercher ici..."
+        name=""
+        id="search-box"
+      />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- home section starts  -->
+    <section class="home" id="home">
+      <div class="swiper-container home-slider">
+        <div id="homeSlider" class="swiper-wrapper wrapper"></div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- dishes section starts  -->
+    <section class="dishes" id="popular">
+      <h3 class="sub-heading">Our products</h3>
+      <h1 class="heading">POPULAR PRODUCTS</h1>
+      <div id="myPlat" class="box-container"></div>
+    </section>
+    <!-- dishes section ends -->
+
+    <!-- about section starts  -->
+    <section class="about" id="about">
+      <h3 class="sub-heading">About Us</h3>
+      <h1 class="heading">Why choose us?</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/about-img.png" alt="" />
+        </div>
+
+        <div class="content">
+          <h3>The Best Prices For Electronic Equipment</h3>
+          <div class="plogoAbout">
+            <p>
+              MaterialStore is an online store, created in 2022, based in Fez,
+              Meknes and Rabat, offering: Electronic cards of development,
+              namely (Arduino, Raspberry pi, ESP32, STM) generally used in
+              <strong>education</strong>. All types of sensors (GAS sensor,
+              temperature, humidity, ultrasound, color ETC). Passive and active
+              electronic components: Resistors, Capacitor, Transistor, Diode,
+              LED. Shield Cards Motor, USB, Ethernet, Display. <br />to start
+              making electronic prototyping, and embark on the realization of
+              your DIY projects of Robotics, IOT Internet of Things, System
+              embarked. <br />Livraison: AMANA | CATHEDIS | GHAZALA | SDTM
+            </p>
+            <div class="logoAbout">
+              <img src="./images/L1.png" alt="" width="250px" />
+            </div>
+          </div>
+
+          <div class="icons-container">
+            <div class="icons">
+              <i class="fas fa-shipping-fast"></i>
+              <span>livraison possible </span>
+            </div>
+            <div class="icons">
+              <i class="fas fa-dollar-sign"></i>
+              <span>paiements faciles</span>
+            </div>
+            <div class="icons">
+              <i class="fas fa-headset"></i>
+              <span>24/7 service</span>
+            </div>
+          </div>
+          <a href="#order" class="btn">Savoir plus</a>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends -->
+
+    <!-- menu section starts  -->
+    <section class="menu" id="products">
+      <h3 class="sub-heading">Notre Menu</h3>
+      <h1 class="heading">produits du jour</h1>
+      <div id="myMenu" class="box-container"></div>
+    </section>
+    <!-- menu section ends -->
+
+    <!-- review section starts  -->
+    <!-- <section class="review" id="review">
+      <h3 class="sub-heading">avis client</h3>
+      <h1 class="heading">ce qu'ils disent</h1>
+
+      <div class="swiper-container review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="images/pic-1.png" alt="" />
+              <div class="user-info">
+                <h3>john deo</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              fugiat consequuntur repellendus aperiam deserunt nihil, corporis
+              fugit voluptatibus voluptate totam neque illo placeat eius quis
+              laborum aspernatur quibusdam. Ipsum, magni.
+            </p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="images/pic-2.png" alt="" />
+              <div class="user-info">
+                <h3>john deo</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              fugiat consequuntur repellendus aperiam deserunt nihil, corporis
+              fugit voluptatibus voluptate totam neque illo placeat eius quis
+              laborum aspernatur quibusdam. Ipsum, magni.
+            </p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="images/pic-3.png" alt="" />
+              <div class="user-info">
+                <h3>john deo</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              fugiat consequuntur repellendus aperiam deserunt nihil, corporis
+              fugit voluptatibus voluptate totam neque illo placeat eius quis
+              laborum aspernatur quibusdam. Ipsum, magni.
+            </p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="images/pic-4.png" alt="" />
+              <div class="user-info">
+                <h3>john deo</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              fugiat consequuntur repellendus aperiam deserunt nihil, corporis
+              fugit voluptatibus voluptate totam neque illo placeat eius quis
+              laborum aspernatur quibusdam. Ipsum, magni.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- review section ends -->
+
+    <!-- order section starts  -->
+    <section class="order" id="order">
+      <h3 class="sub-heading">Order Now</h3>
+      <h1 class="heading">Easy And Fast</h1>
+
+      <form id="ContactForm">
+        <div class="inputBox">
+          <div class="input">
+            <span
+              >Your Name
+              <p style="color: red; display: inline">*</p>
+            </span>
+            <input
+              id="formeNom"
+              type="text"
+              placeholder="Entrez votre nom"
+              maxlength="50"
+              required
+            />
+          </div>
+
+          <div class="input">
+            <span>Your Order </span>
+            <select name="multipleselect" id="multipleselect" multiple>
+              <!-- <option>A</option>
+              <option>B</option>
+              <option>C</option>
+              <option>D</option> -->
+            </select>
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span
+              >Your Number
+              <p style="color: red; display: inline">*</p></span
+            >
+            <input
+              id="formeNumber"
+              type="votre numéro"
+              placeholder="Entrez votre numéro"
+              maxlength="15"
+              minlength="10"
+              required
+            />
+          </div>
+
+          <div class="input">
+            <span>How Many</span>
+            <input
+              id="formeCombien"
+              type="number"
+              placeholder="Combien de commandes"
+              min="0"
+              max="10000"
+            />
+          </div>
+        </div>
+
+        <div class="inputBox">
+          <div class="input" style="width: 100%">
+            <span
+              >Your Message
+              <p style="color: red; display: inline">*</p></span
+            >
+            <textarea
+              name=""
+              placeholder="Entrez votre message"
+              id="formeMessage"
+              cols="60"
+              rows="10"
+              style="width: 100%"
+              maxlength="900"
+              required
+            ></textarea>
+          </div>
+        </div>
+        <input type="submit" value="Order" class="btn" />
+      </form>
+    </section>
+
+    <!-- order section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Site</h3>
+          <a
+            target="_blanc"
+            href="https://www.google.fr/maps/place/France/@46.1314134,-2.4349967,6z/data=!3m1!4b1!4m5!3m4!1s0xd54a02933785731:0x6bfd3f96c747d9f7!8m2!3d46.6305787!4d2.4554443"
+            >Morocco</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>Quick links</h3>
+
+          <a href="#home">home</a>
+          <a href="#popular">Popular</a>
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+        </div>
+
+        <div class="box">
+          <h3>Contact Information</h3>
+          <a href="tel: +21233369089">(+212) 6 33 36 90 89</a>
+          <a href=" mailto:materialstore@gmail.com "
+            >materialstore@gmail.com
+          </a>
+          <a href="https://www.google.fr/maps/place/" target="_blank"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            asperiores aperiam architecto deleniti quae hic assumenda iusto
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">Tiktok</a>
+        </div>
+      </div>
+
+      <div class="credit">
+        copyright @ 2023 by
+        <a href="https://www.instagram.com/qader.rb/">QAD</a>
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- loader part  -->
+    <div class="loader-container">
+      <img src="images/loader.gif" alt="" />
+    </div>
+
+    <script src="js/Jquery.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/email.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/jquery.image-popup.js"></script>
+    <script src="js/script.js"></script>
+
+    <script src="js/multi-select-tag.js"></script>
+    <script></script>
+  </body>
+</html>
