@@ -146,7 +146,7 @@ function showProjects(projects) {
     .forEach((project) => {
       projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+      <img draggable="false" src="/qad/assets/images/projects/${project.image}.png" alt="project" />
       <img draggable="false" src="https://github.com/ayoub198fillali/porayfil/blob/main/assets/images/projects/${project.image}.png?raw=true" alt="project" />
 
       <div class="content">
